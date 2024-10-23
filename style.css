@@ -12,11 +12,45 @@ body {
     margin: 0;
     background-image: url(background.png);
     background-attachment: fixed;
+    background-size: cover;
     font-family: "Poppins", sans-serif;
     color: var(--text);
+    width: 100vw;
+    height: 100vh;
 }
 
-.wrapper {
+table {
+    border-collapse: collapse;
+}
+
+td.content {
     background-color: var(--background);
-    width: 1000px;
+}
+
+tr {
+    height: 100vh;
+}
+
+td {
+    width: 33.33%;
+    padding: 60px;
+}
+
+.hero {
+    text-align: center;
+}
+
+h1.outline {
+    color: var(--background);
+    -webkit-text-stroke: 1px var(--text);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h2::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: var(--text);
+    border-radius: 1.5px;
+    display: block;
 }
