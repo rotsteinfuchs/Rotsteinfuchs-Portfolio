@@ -13,40 +13,23 @@ body {
     background-image: url(background.png);
     background-attachment: fixed;
     background-size: cover;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", "Helvetica", "Arial", sans-serif;
     color: var(--text);
 }
 
-.table-container {
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 33.33vw);
     overflow-x: hidden;
     overflow-y: scroll;
-}
-
-table {
-    border-collapse: collapse;
     width: 100%;
-    table-layout: fixed;
 }
 
-tr {
-    height: 100vh;
-}
-
-td {
+.grid-item {
     padding: 60px;
     box-sizing: border-box;
-}
-
-td.content {
     background-color: var(--background);
-}
-
-td[colspan="2"] {
-    width: 66.66vw;
-}
-
-td:not([colspan="2"]) {
-    width: 33.33vw;
+    height: 100vh;
 }
 
 .hero {
